@@ -27,7 +27,7 @@ class SerialHandler(ABCSerialReader):
         parsed = []*24
         parsed = new_data.split(sep=";")
 
-        # Assumption that we are always on the north-east side of gloab
+        # Assumption that we are always on the north-east side of globe
         try:
             longitude_str = parsed[3]
             latitude_str = parsed[1]
