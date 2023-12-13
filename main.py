@@ -24,14 +24,14 @@ MAP_HEIGHT = 748
 def main():
     debug = args.debug  # no debug in basic format
     serial_port = args.port  # default value of serial port
-    gmap = gmplot.GoogleMapPlotter(50.1414537,14.6213022,11.94) #center map to Dejvice 50.10203861110547, 14.39183530621543, 18 or Home 50.09586110952633, 14.35383599064989
+    gmap = gmplot.GoogleMapPlotter(50.1027458,14.3935679,16.62) #center map to Dejvice 50.10203861110547, 14.39183530621543, 18 or Home 50.09586110952633, 14.35383599064989
     #os.system('start .\my_map.html')
     gmap.draw("my_map.html")
 
     clear = lambda: os.system('cls')
 
     driver = webdriver.Firefox(executable_path=r'C:\Users\dvorakj\Documents\geckodriver.exe')
-    driver.get('file:///C:/Users/dvorakj/Documents/kuba-gps-viewer/my_map.html')
+    driver.get('file:///C:/Users/dvorakj/Documents/GitHub/strato-tracker/my_map.html')
 
     wait_to_refresh = 0
     #mytext = Tk.StringVar()
